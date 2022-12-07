@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:loggy/loggy.dart';
 import 'package:transparent_image/transparent_image.dart';
-
 import '../model/tvmazesearchresult.dart';
 
 class ShowDetails extends StatefulWidget {
@@ -18,7 +18,7 @@ class _ShowDetailsState extends State<ShowDetails> {
   void initState() {
     super.initState();
     if (kDebugMode) {
-      print('Show: ${widget.show.name}');
+      logDebug('Show: ${widget.show.name}');
     }
   }
 

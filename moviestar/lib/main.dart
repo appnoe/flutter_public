@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
-
+import 'package:loggy/loggy.dart';
 import 'api/api.dart';
 import 'view/show_list.dart';
 
 void main() {
+  Loggy.initLoggy(
+    logPrinter: const PrettyPrinter(),
+  );
   runApp(const WorkshopApp());
 }
 

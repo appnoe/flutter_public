@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:loggy/loggy.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:async/async.dart';
 
@@ -50,7 +51,7 @@ class _ShowListState extends State<ShowList> {
 
   void _onTapImage(int id) {
     if (kDebugMode) {
-      print("onTapImage: $id");
+      logDebug("onTapImage: $id");
     }
     var show = _showWithID(id);
     if (show != null) {
