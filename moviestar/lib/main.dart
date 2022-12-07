@@ -1,14 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 
 import 'api/api.dart';
 import 'view/show_list.dart';
-
-/* TODO
-- GridView
-- Logout
-*/
 
 void main() {
   runApp(const WorkshopApp());
@@ -69,7 +63,7 @@ class _LoginWidgetState extends State<LoginWidget> {
       onSubmitAnimationCompleted: () {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => const ShowList(
-            title: "App zum Workshop",
+            title: 'Moviestar',
           ),
         ));
       },
