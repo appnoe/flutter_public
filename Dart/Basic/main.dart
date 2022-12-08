@@ -1,4 +1,4 @@
 void main(List<String> args) {
-  String output = 'World';
-  print('Hello $output');
+  var typeInference = 'World';
+  print('Hello $typeInference');
 }
